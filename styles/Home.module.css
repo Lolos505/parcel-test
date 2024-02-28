@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  align-items: flex-start; /* Align cards at the top */
+  padding: 2rem; /* Adjusted padding for better spacing */
+}
+
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: #fff; /* White background for the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect for better visibility */
+  transition: box-shadow 200ms;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* More pronounced shadow effect on hover */
+}
+
+.card h2, .card p {
+  margin: 0;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 1; /* Make text fully opaque */
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .main {
+    flex-direction: row; /* Keep cards in a row on small screens */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure side-by-side layout */
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    align-items: stretch; /* Stretch cards to fill available vertical space */
+    gap: 10px; /* Reduce gap on smaller screens */
+    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .card {
+    min-width: 250px; /* Ensure cards have a minimum width */
+  }
+}
