@@ -14,8 +14,7 @@ export default function Home() {
   const [houses, setHouses] = useState<House[]>([]);
 
   useEffect(() => {
-    // fetch("http://localhost:8080/houses") uncomment this line and comment bellow line to check app in localhost
-    fetch("https://parcel-test-green.vercel.app/houses")
+    fetch("http://localhost:8080/houses")
       .then((response) => response.json())
       .then((data) => {
         console.log(data); // Check the fetched data
