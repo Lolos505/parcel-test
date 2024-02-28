@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 interface Head {
   id: string;
