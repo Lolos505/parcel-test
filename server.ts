@@ -33,7 +33,7 @@ const houses: House[] = [
 ];
 
 const corsOptions = {
-    origin: 'https://parcel-delta-three.vercel.app',
+    origin: 'https://parcel-test-puce.vercel.app',
     optionsSuccessStatus: 200,
   };
 

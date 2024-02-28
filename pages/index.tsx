@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     // fetch("http://localhost:8080/houses") uncomment this line and comment bellow line to check app in localhost
-    fetch("https://parcel-dev.vercel.app/houses")
+    fetch("https://parcel-test-puce.vercel.app")
       .then((response) => response.json())
       .then((data) => {
         console.log(data); // Check the fetched data
