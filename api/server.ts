@@ -33,7 +33,7 @@ const houses: House[] = [
 ];
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://parcel-test-green.vercel.app',
     optionsSuccessStatus: 200,
   };
 
